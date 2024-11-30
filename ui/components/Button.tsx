@@ -25,7 +25,7 @@ import {
   TypographyProps,
   VariantProps,
 } from '@shopify/restyle';
-import {Theme, useAppRestyle} from '@theme';
+import {Theme, useAppRestyle} from '@/theme';
 
 import {useFontStyle} from '@/ui/hooks';
 import {forwardRef, getKeys} from '@/ui/utils';

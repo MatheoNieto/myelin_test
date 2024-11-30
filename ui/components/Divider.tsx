@@ -6,7 +6,7 @@ import {
 
 import Box, {BoxProps} from './Box';
 
-import type {Theme} from '@theme';
+import type {Theme} from '@/theme';
 
 export type DividerProps = VariantProps<Theme, 'dividerVariants', 'variant'> &
   BoxProps;

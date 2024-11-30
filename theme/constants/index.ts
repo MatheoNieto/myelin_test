@@ -1,4 +1,4 @@
-import {FontWeight} from '@theme/types';
+import {FontWeight} from '@/theme/types';
 import AppFonts from './AppFonts';
 
 export const VARIABLE_CUSTOM_FONTS = [AppFonts.Poppins];
@@ -46,4 +46,4 @@ export const DEFAULT_SYSTEM_FONTS = [
   ),
 ];
 
-export {default as palette} from '@theme/constants/palette';
+export {default as palette} from '@/theme/constants/palette';

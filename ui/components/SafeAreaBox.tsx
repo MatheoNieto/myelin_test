@@ -9,9 +9,9 @@ import {
   NativeSafeAreaViewProps,
   SafeAreaView,
 } from 'react-native-safe-area-context';
-import {useAppRestyle} from '@theme';
+import {useAppRestyle} from '@/theme';
 
-import type {Theme} from '@theme';
+import type {Theme} from '@/theme';
 
 type RestyleSafeAreaBoxProps = ShopifyRestyleBoxProps<Theme> & {
   style?: Animated.WithAnimatedValue<StyleProp<ViewStyle>>;

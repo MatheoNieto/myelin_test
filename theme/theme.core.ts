@@ -1,13 +1,13 @@
 import {createTheme} from '@shopify/restyle';
 
-import {palette} from '@theme/constants';
+import {palette} from '@/theme/constants';
 import {
   buttonVariants,
   dividerVariants,
   inputVariants,
   textVariants,
   cardVariants,
-} from '@theme/variants';
+} from '@/theme/variants';
 
 const theme = createTheme({
   colors: {

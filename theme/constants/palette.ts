@@ -1,6 +1,4 @@
-//TODO: we need split the palette in two? primaryDark300 primaryLight300 etc
 const palette = {
-  // From Figma as of 2022-04-08
   base0: '#FFFFFF',
   base25: '#F8F8FF',
   base50: '#E6E6F5',

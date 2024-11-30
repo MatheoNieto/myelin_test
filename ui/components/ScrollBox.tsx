@@ -12,12 +12,12 @@ import {
   boxRestyleFunctions,
   composeRestyleFunctions,
 } from '@shopify/restyle';
-import {useAppRestyle} from '@theme';
+import {useAppRestyle} from '@/theme';
 
 import {useAsProp} from '@/ui/hooks';
 import {forwardRef} from '@/ui/utils';
 
-import type {Theme} from '@theme';
+import type {Theme} from '@/theme';
 
 type RestyleBoxProps = ShopifyRestyleBoxProps<Theme> & {
   style?: Animated.WithAnimatedValue<StyleProp<ViewStyle>>;

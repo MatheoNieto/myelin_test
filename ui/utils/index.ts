@@ -1,10 +1,10 @@
 import * as React from 'react';
 
-import {FONT_WEIGHT_MAPPING} from '@theme/constants';
+import {FONT_WEIGHT_MAPPING} from '@/theme/constants';
 
-import type {FontWeight} from '@theme/types';
+import type {FontWeight} from '@/theme/types';
 import type {As, ComponentWithAs, PropsOf, RightJoinProps} from '@/ui/types';
-import AppFonts from '@theme/constants/AppFonts';
+import AppFonts from '@/theme/constants/AppFonts';
 
 export const createComponentWithAsProp = <
   Component extends As,

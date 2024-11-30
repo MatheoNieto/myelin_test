@@ -1,5 +1,5 @@
-import {palette} from '@theme/constants';
-import themeCore from '@theme/theme.core';
+import {palette} from '@/theme/constants';
+import themeCore from '@/theme/theme.core';
 
 const lightTheme = {
   ...themeCore,

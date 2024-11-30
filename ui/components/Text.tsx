@@ -17,12 +17,12 @@ import {
   TextProps as ShopifyRestyleTextProps,
   textRestyleFunctions,
 } from '@shopify/restyle';
-import {CustomFonts, useAppRestyle} from '@theme';
+import {CustomFonts, useAppRestyle} from '@/theme';
 
 import {useAsProp, useFontStyle} from '@/ui/hooks';
 import {forwardRef} from '@/ui/utils';
 
-import type {FontWeight, Theme} from '@theme';
+import type {FontWeight, Theme} from '@/theme';
 import type {Animation} from 'react-native-animatable';
 
 type RestyleTextProps = PositionProps<Theme> &

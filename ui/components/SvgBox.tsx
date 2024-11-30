@@ -7,7 +7,7 @@ import {
   createRestyleFunction,
 } from '@shopify/restyle';
 import {Svg, SvgProps} from 'react-native-svg';
-import {Theme, useAppRestyle} from '@theme';
+import {Theme, useAppRestyle} from '@/theme';
 import {isNumber} from 'lodash';
 
 import {useAsProp} from '@/ui/hooks';

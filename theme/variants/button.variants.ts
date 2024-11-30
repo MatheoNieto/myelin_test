@@ -1,5 +1,5 @@
 import {isTablet} from '@/helpers/platform';
-import AppFonts from '@theme/constants/AppFonts';
+import AppFonts from '@/theme/constants/AppFonts';
 
 const buttonVariants = {
   defaults: {

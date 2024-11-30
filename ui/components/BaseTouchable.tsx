@@ -16,7 +16,7 @@ import {
   boxRestyleFunctions,
   composeRestyleFunctions,
 } from '@shopify/restyle';
-import {Theme, useAppRestyle} from '@theme';
+import {Theme, useAppRestyle} from '@/theme';
 
 import {useAsProp} from '@/ui/hooks';
 import {forwardRef} from '@/ui/utils';

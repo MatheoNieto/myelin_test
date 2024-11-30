@@ -26,7 +26,7 @@ import {
   spacingShorthand,
   typography,
 } from '@shopify/restyle';
-import {useAppRestyle} from '@theme';
+import {useAppRestyle} from '@/theme';
 
 import {useAsProp, useFontStyle} from '@/ui/hooks';
 import {forwardRef, getKeys} from '@/ui/utils';
