@@ -1,7 +1,7 @@
 import {FontWeight} from '@/theme/types';
 import AppFonts from './AppFonts';
 
-export const VARIABLE_CUSTOM_FONTS = [AppFonts.Poppins];
+export const VARIABLE_CUSTOM_FONTS = [AppFonts['Roboto-Medium']];
 
 export const FONT_WEIGHT_MAPPING: Record<FontWeight, string> = {
   '100': '-Thin',
@@ -40,7 +40,7 @@ export const DEFAULT_SYSTEM_FONTS = [
   ...[...new Array(9)].map(
     (_, index) =>
       parseAppFontFamily(
-        AppFonts.Poppins,
+        AppFonts['Roboto-Medium'],
         ((index + 1) * 100).toString() as any,
       ) as string,
   ),

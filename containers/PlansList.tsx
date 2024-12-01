@@ -18,7 +18,7 @@ const PlansList = () => {
         currentMonth={currentMonth}
         nextMonth={nextMonth}
       />
-      <CardPlans name="bla" />
+      <CardPlans name="All events saved" />
     </Box>
   );
 };

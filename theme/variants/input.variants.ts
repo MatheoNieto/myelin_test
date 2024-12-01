@@ -3,7 +3,7 @@ import AppFonts from '@/theme/constants/AppFonts';
 
 const inputVariants = {
   defaults: {
-    fontFamily: AppFonts.Poppins,
+    fontFamily: AppFonts['Roboto-Medium'],
     fontWeight: '300',
     fontSize: isTablet ? 20 : 16,
     color: 'textPrimary',

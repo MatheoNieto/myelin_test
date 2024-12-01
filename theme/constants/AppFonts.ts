@@ -1,5 +1,5 @@
 export enum AppFonts {
-  Poppins = 'Poppins',
+  'Roboto-Medium' = 'Roboto-Medium',
 }
 
 export default AppFonts;
