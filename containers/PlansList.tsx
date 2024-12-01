@@ -1,7 +1,8 @@
 import {CardPlans, HeaderFilterPlans} from '@/components';
+import MiniatureCarousel from '@/components/CardPlans/MiniatureCarousel';
 import {useGetPlans} from '@/core/hooks/plans/usePlans';
 import {getCurrentAndNextMonth} from '@/helpers';
-import {Box, Text} from '@/ui/components';
+import {Box} from '@/ui/components';
 import React from 'react';
 
 const PlansList = () => {
