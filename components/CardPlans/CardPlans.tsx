@@ -9,7 +9,7 @@ type Props = {
 
 const CardPlans: React.FC<Props> = ({name}) => {
   return (
-    <Card>
+    <Card variant="cardPlan">
       <Box flexDirection="row">
         <Badge numberEvents={80} />
         <Box px="s" justifyContent="center">

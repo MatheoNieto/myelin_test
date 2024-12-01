@@ -12,6 +12,9 @@ const cardVariants = {
     elevation: 3,
     shadowColor: 'lightGray',
   },
+  cardPlan: {
+    borderRadius: 'm',
+  },
 };
 
 export default cardVariants;
