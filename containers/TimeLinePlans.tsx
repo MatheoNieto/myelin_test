@@ -50,6 +50,8 @@ const TimeLinePlans = () => {
       <>
         <Pointer title={itemMonth} type="default" />
         <FlatList
+          scrollEnabled={false}
+          nestedScrollEnabled
           data={plansMonthly[itemMonth as keyof PLAN_MONTH_TYPE]}
           renderItem={({item, index}) =>
             renderEvents({item, index, dataImagesOfEvents})
@@ -72,6 +74,8 @@ const TimeLinePlans = () => {
         borderLeftWidth={1}
       />
       <FlatList
+        scrollEnabled={false}
+        nestedScrollEnabled
         data={Object.keys(plansMonthly)}
         renderItem={renderMonth}
         keyExtractor={(_, index) => `timeLineMonth-${index}`}

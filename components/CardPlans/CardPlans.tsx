@@ -15,7 +15,7 @@ const CardPlans: React.FC<Props> = ({name, imagesEvents, numberEvents}) => {
     <Card variant="cardPlan">
       <Box flexDirection="row">
         <Badge numberEvents={numberEvents} />
-        <Box width={150} px="s" justifyContent="center">
+        <Box width={170} px="s" justifyContent="center">
           <Text variant="titleEvent">{name}</Text>
         </Box>
         <MiniatureCarousel carouselItems={imagesEvents} />

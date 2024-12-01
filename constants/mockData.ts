@@ -37,77 +37,90 @@ export const mockPlanResponse: PLAN_RESPONSE = {
     December: [
       {
         name: 'Christmas Markets in Germany',
-        imageUrl: 'https://example.com/images/germany_christmas.jpg',
+        imageUrl:
+          'https://uncle.co.uk/app/uploads/2024/04/UNCLE-LEEDS_Area_FINAL-183.jpg',
       },
       {
         name: 'Ski Trip to Aspen',
-        imageUrl: 'https://example.com/images/aspen_ski.jpg',
+        imageUrl:
+          'https://uncle.co.uk/app/uploads/2024/04/UNCLE-LEEDS_Area_FINAL-183.jpg',
       },
     ],
     January: [
       {
         name: "New Year's Celebration in Sydney",
-        imageUrl: 'https://example.com/images/sydney_newyear.jpg',
+        imageUrl:
+          'https://static.leonardo-hotels.com/image/Leeds_2048x1367_desktop_2.jpeg',
       },
     ],
     February: [
       {
         name: "Valentine's Day in Venice",
-        imageUrl: 'https://example.com/images/venice_valentines.jpg',
+        imageUrl:
+          'https://static.leonardo-hotels.com/image/Leeds_2048x1367_desktop_2.jpeg',
       },
     ],
     March: [
       {
         name: 'Spring Festival in Japan',
-        imageUrl: 'https://example.com/images/japan_cherryblossoms.jpg',
+        imageUrl:
+          'https://static.leonardo-hotels.com/image/Leeds_2048x1367_desktop_2.jpeg',
       },
     ],
     April: [
       {
         name: 'Safari in Kenya',
-        imageUrl: 'https://example.com/images/kenya_safari.jpg',
+        imageUrl:
+          'https://static.leonardo-hotels.com/image/Leeds_2048x1367_desktop_2.jpeg',
       },
     ],
     May: [
       {
         name: 'Road Trip in California',
-        imageUrl: 'https://example.com/images/california_roadtrip.jpg',
+        imageUrl:
+          'https://static.leonardo-hotels.com/image/Leeds_2048x1367_desktop_2.jpeg',
       },
     ],
     June: [
       {
         name: 'Beach Holiday in Bali',
-        imageUrl: 'https://example.com/images/bali_beach.jpg',
+        imageUrl:
+          'https://static.leonardo-hotels.com/image/Leeds_2048x1367_desktop_2.jpeg',
       },
     ],
     July: [
       {
         name: 'Cruise in the Mediterranean',
-        imageUrl: 'https://example.com/images/mediterranean_cruise.jpg',
+        imageUrl:
+          'https://static.leonardo-hotels.com/image/Leeds_2048x1367_desktop_2.jpeg',
       },
     ],
     August: [
       {
         name: 'Festival of Lights in India',
-        imageUrl: 'https://example.com/images/india_festival.jpg',
+        imageUrl:
+          'https://static.leonardo-hotels.com/image/Leeds_2048x1367_desktop_2.jpeg',
       },
     ],
     September: [
       {
         name: 'Oktoberfest in Munich',
-        imageUrl: 'https://example.com/images/munich_oktoberfest.jpg',
+        imageUrl:
+          'https://static.leonardo-hotels.com/image/Leeds_2048x1367_desktop_2.jpeg',
       },
     ],
     October: [
       {
         name: 'Halloween in Salem',
-        imageUrl: 'https://example.com/images/salem_halloween.jpg',
+        imageUrl:
+          'https://static.leonardo-hotels.com/image/Leeds_2048x1367_desktop_2.jpeg',
       },
     ],
     November: [
       {
         name: 'Autumn Colors in Kyoto',
-        imageUrl: 'https://example.com/images/kyoto_autumn.jpg',
+        imageUrl:
+          'https://static.leonardo-hotels.com/image/Leeds_2048x1367_desktop_2.jpeg',
       },
     ],
   },
