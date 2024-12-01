@@ -1,5 +1,6 @@
 import {PlansList} from '@/containers';
 import ExpiresEvents from '@/containers/ExpiresEvents';
+import TimeLinePlans from '@/containers/TimeLinePlans';
 import {formatDate, getGreeting} from '@/helpers';
 import {Box, HeaderBox, ScrollBox, Text} from '@/ui/components';
 import React from 'react';
@@ -17,6 +18,7 @@ export default function Planner() {
         </Box>
         <PlansList />
         <ExpiresEvents />
+        <TimeLinePlans />
       </Box>
     </ScrollBox>
   );
