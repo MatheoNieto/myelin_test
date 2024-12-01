@@ -1,8 +1,9 @@
 import {Box} from '@/ui/components';
 import React from 'react';
-import {Image, StyleSheet} from 'react-native';
+import {Dimensions, Image, StyleSheet} from 'react-native';
 import Carousel from 'react-native-snap-carousel';
 
+const {width} = Dimensions.get('screen');
 const MiniatureCarousel = () => {
   const carouselItems = [
     {
@@ -46,10 +47,11 @@ const MiniatureCarousel = () => {
     <Box>
       <Carousel
         layout="stack"
+        layoutCardOffset={-18}
         data={carouselItems}
         renderItem={renderItem}
         sliderWidth={100}
-        itemWidth={500}
+        itemWidth={width}
       />
     </Box>
   );
