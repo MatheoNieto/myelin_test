@@ -28,8 +28,8 @@ const ExpiresEvents = () => {
     },
   ];
 
-  const renderItems = ({item}: {item: {urlImage: string}}) => (
-    <CardEvents title="Farmhouse Plan" urlImage={item.urlImage} />
+  const renderItems = ({item}: {item: {urlImage: string; title: string}}) => (
+    <CardEvents title={item.title} urlImage={item.urlImage} />
   );
 
   return (
