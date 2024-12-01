@@ -1,4 +1,5 @@
 import {CardEvents} from '@/components';
+import Pointer from '@/components/Pointer';
 import {Box} from '@/ui/components';
 import React from 'react';
 import {FlatList} from 'react-native';
@@ -17,6 +18,9 @@ const ExpiresEvents = () => {
 
   return (
     <Box>
+      <Box mx="m">
+        <Pointer type="expires" title="Expires in 5 days!" />
+      </Box>
       <FlatList
         horizontal
         data={data}

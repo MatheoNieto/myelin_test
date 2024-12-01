@@ -13,7 +13,7 @@ const PlansList = () => {
 
   console.log('==>listFilter', JSON.stringify(listFilter));
   return (
-    <Box flex={1} p="m" backgroundColor="white">
+    <Box p="m" backgroundColor="white">
       <HeaderFilterPlans
         onChangeFilter={setOptionFilter}
         currentMonth={currentMonth}

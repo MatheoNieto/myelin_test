@@ -1,4 +1,4 @@
-import {Card} from '@/ui/components';
+import {Box} from '@/ui/components';
 import {Image} from 'react-native';
 import React from 'react';
 
@@ -7,16 +7,19 @@ type Props = {
 };
 const CardEvents: React.FC<Props> = ({urlImage}) => {
   return (
-    <Card>
+    <Box p="m" backgroundColor="white">
       <Image
         source={{
           uri: urlImage,
         }}
-        width={100}
-        height={100}
+        width={130}
+        height={130}
         resizeMode="cover"
+        style={{
+          borderRadius: 5,
+        }}
       />
-    </Card>
+    </Box>
   );
 };
 
