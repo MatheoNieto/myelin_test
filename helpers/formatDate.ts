@@ -23,3 +23,13 @@ export const getGreeting = () => {
     return 'Good Night';
   }
 };
+
+export const getCurrentAndNextMonth = () => {
+  const currentMonth = dayjs().format('MMMM'); // Full name of the current month
+  const nextMonth = dayjs().add(1, 'month').format('MMMM'); // Full name of the next month
+
+  return {
+    currentMonth,
+    nextMonth,
+  };
+};

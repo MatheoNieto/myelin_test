@@ -1,19 +1,23 @@
-import {CardPlans} from '@/components';
-import {formatDate, getGreeting} from '@/helpers';
+import {CardPlans, HeaderFilterPlans} from '@/components';
+import {useGetPlans} from '@/core/hooks/plans/usePlans';
+import {getCurrentAndNextMonth} from '@/helpers';
 import {Box, Text} from '@/ui/components';
 import React from 'react';
 
 const PlansList = () => {
-  const getDateToday = formatDate(new Date(), 'dddd, DD MMM');
-  const greeting = getGreeting();
+  const {currentMonth, nextMonth} = getCurrentAndNextMonth();
 
+  const [optionFilter, setOptionFilter] = React.useState<string>('quickPlans');
+  const {data: listFilter} = useGetPlans(optionFilter);
+
+  console.log('==>listFilter', JSON.stringify(listFilter));
   return (
     <Box flex={1} p="m" backgroundColor="white">
-      <Box mb="m">
-        <Text fontWeight="600">{getDateToday}</Text>
-        <Text variant="headerBold">{greeting}</Text>
-      </Box>
-
+      <HeaderFilterPlans
+        onChangeFilter={setOptionFilter}
+        currentMonth={currentMonth}
+        nextMonth={nextMonth}
+      />
       <CardPlans name="bla" />
     </Box>
   );
