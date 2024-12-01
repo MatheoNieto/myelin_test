@@ -1,3 +1,4 @@
+import {PLAN_MONTH_TYPE} from '@/models/plans';
 import dayjs from 'dayjs';
 
 //@ts-ignore
@@ -24,12 +25,15 @@ export const getGreeting = () => {
   }
 };
 
-export const getCurrentAndNextMonth = () => {
+export const getCurrentAndNextMonth = (): {
+  currentMonth: keyof PLAN_MONTH_TYPE;
+  nextMonth: keyof PLAN_MONTH_TYPE;
+} => {
   const currentMonth = dayjs().format('MMMM'); // Full name of the current month
   const nextMonth = dayjs().add(1, 'month').format('MMMM'); // Full name of the next month
 
   return {
-    currentMonth,
-    nextMonth,
+    currentMonth: currentMonth as keyof PLAN_MONTH_TYPE,
+    nextMonth: nextMonth as keyof PLAN_MONTH_TYPE,
   };
 };

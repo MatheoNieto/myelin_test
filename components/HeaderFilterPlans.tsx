@@ -1,19 +1,21 @@
+import {OPTION_FILTER_TYPE, PLAN_MONTH_TYPE} from '@/models/plans';
 import {Box, Button, Text} from '@/ui/components';
 import React from 'react';
 
 type Props = {
-  onChangeFilter: (newValue: string) => void;
-  currentMonth: string;
-  nextMonth: string;
+  onChangeFilter: (newValue: OPTION_FILTER_TYPE) => void;
+  currentMonth: keyof PLAN_MONTH_TYPE;
+  nextMonth: keyof PLAN_MONTH_TYPE;
 };
 const HeaderFilterPlans: React.FC<Props> = ({
   onChangeFilter,
   currentMonth,
   nextMonth,
 }) => {
-  const [optionActive, setOptionActive] = React.useState('quickPlans');
+  const [optionActive, setOptionActive] =
+    React.useState<OPTION_FILTER_TYPE>('quickPlans');
 
-  const onChangeOption = (option: string) => {
+  const onChangeOption = (option: OPTION_FILTER_TYPE) => {
     setOptionActive(option);
     onChangeFilter(option);
   };

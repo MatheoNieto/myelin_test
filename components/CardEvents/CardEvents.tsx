@@ -41,17 +41,17 @@ const CardEvents: React.FC<Props> = ({urlImage, title}) => {
             justifyContent="space-between">
             <Box flexDirection="row">
               <Box style={styles.labels} px="s" borderRadius="s">
-                <Text color="white">2</Text>
+                <Text color="white">¡ 2</Text>
               </Box>
 
               <Box style={styles.labels} px="s" mx="xs" borderRadius="s">
-                <Text color="white">2</Text>
+                <Text color="white">¡ 2</Text>
               </Box>
             </Box>
 
             <Box>
               <Box style={styles.labels} px="s" mx="xs" borderRadius="s">
-                <Text color="white">2</Text>
+                <Text color="white">¡¡</Text>
               </Box>
             </Box>
           </Box>
