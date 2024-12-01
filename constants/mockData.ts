@@ -3,20 +3,24 @@ import {PLAN_RESPONSE} from '@/models/plans';
 export const mockPlanResponse: PLAN_RESPONSE = {
   allplans: [
     {
-      name: 'Beach Getaway',
-      imageUrl: 'https://example.com/images/maldives_beach.jpg',
+      name: 'Any place',
+      imageUrl:
+        'https://uncle.co.uk/app/uploads/2024/04/UNCLE-LEEDS_Area_FINAL-183.jpg',
     },
     {
-      name: 'Mountain Adventure',
-      imageUrl: 'https://example.com/images/switzerland_mountains.jpg',
+      name: 'Any place',
+      imageUrl:
+        'https://youmedia-cdn.s3.eu-west-2.amazonaws.com/wp-content/uploads/2024/02/28110212/leeds-skyline_402434702-as.jpg',
     },
     {
-      name: 'City Break',
-      imageUrl: 'https://example.com/images/newyork_cityscape.jpg',
+      name: 'Any place',
+      imageUrl:
+        'https://pic.uhomes.com/onlineblog/cdn/uploads/2024/02/leeds-city-centre.jpg',
     },
     {
-      name: 'Desert Safari',
-      imageUrl: 'https://example.com/images/dubai_desert.jpg',
+      name: 'Any place',
+      imageUrl:
+        'https://static.leonardo-hotels.com/image/Leeds_2048x1367_desktop_2.jpeg',
     },
   ],
   quickPlans: [

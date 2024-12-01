@@ -1,6 +1,9 @@
 import {CardPlans, HeaderFilterPlans} from '@/components';
 import MiniatureCarousel from '@/components/CardPlans/MiniatureCarousel';
-import {useGetPlans} from '@/core/hooks/plans/usePlans';
+import {
+  useGetImagesEventOfAllPlans,
+  useGetPlans,
+} from '@/core/hooks/plans/usePlans';
 import {getCurrentAndNextMonth} from '@/helpers';
 import {OPTION_FILTER_TYPE} from '@/models/plans';
 import {Box} from '@/ui/components';
@@ -10,9 +13,12 @@ const PlansList = () => {
   const {currentMonth, nextMonth} = getCurrentAndNextMonth();
 
   const [_, setOptionFilter] = React.useState<OPTION_FILTER_TYPE>('quickPlans');
-  const {data: listFilter} = useGetPlans('allplans');
+  const {data: imagesEvents, isLoading} = useGetImagesEventOfAllPlans();
 
-  console.log('==>listFilter', JSON.stringify(listFilter));
+  if (isLoading || !imagesEvents) {
+    return null;
+  }
+
   return (
     <Box p="m" backgroundColor="white">
       <HeaderFilterPlans
@@ -20,7 +26,11 @@ const PlansList = () => {
         currentMonth={currentMonth}
         nextMonth={nextMonth}
       />
-      <CardPlans name="All events saved" />
+      <CardPlans
+        name="All events saved"
+        imagesEvents={imagesEvents}
+        numberEvents={imagesEvents.length}
+      />
     </Box>
   );
 };

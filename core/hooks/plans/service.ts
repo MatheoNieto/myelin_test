@@ -13,7 +13,6 @@ export const getPlansService = async (
   filterOptions: OPTION_FILTER_TYPE,
 ): Promise<EVENT_TYPE[]> => {
   let dataService: PLAN_RESPONSE = mockPlanResponse;
-  console.log('=>configApp.mocks', configApp.mocks);
 
   if (!configApp.mocks) {
     const result = await axiosClient.get<PLAN_RESPONSE>(endpoints.plan);

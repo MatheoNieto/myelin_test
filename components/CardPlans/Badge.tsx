@@ -15,7 +15,11 @@ const Badge: React.FC<Props> = ({numberEvents = 0}) => {
       <Text my="xxs" variant="bodySmallRegular" textAlign="center">
         Events
       </Text>
-      <Box backgroundColor="primaryText" borderRadius="m">
+      <Box
+        backgroundColor="primaryText"
+        borderRadius="m"
+        width={numberEvents > 9 ? 50 : 40}
+        alignItems="center">
         <Text variant="badgeNumbersPlans">{numberEvents}</Text>
       </Box>
     </Box>

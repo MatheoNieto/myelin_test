@@ -29,8 +29,8 @@ export const getCurrentAndNextMonth = (): {
   currentMonth: keyof PLAN_MONTH_TYPE;
   nextMonth: keyof PLAN_MONTH_TYPE;
 } => {
-  const currentMonth = dayjs().format('MMMM'); // Full name of the current month
-  const nextMonth = dayjs().add(1, 'month').format('MMMM'); // Full name of the next month
+  const currentMonth = dayjs().format('MMM'); // Full name of the current month
+  const nextMonth = dayjs().add(1, 'month').format('MMM'); // Full name of the next month
 
   return {
     currentMonth: currentMonth as keyof PLAN_MONTH_TYPE,

@@ -1,6 +1,10 @@
 import {useQuery, UseQueryResult} from '@tanstack/react-query';
 import {getPlansService} from './service';
-import {OPTION_FILTER_TYPE, PLAN_RESPONSE} from '@/models/plans';
+import {
+  IMAGES_EVENTS_PLANS,
+  OPTION_FILTER_TYPE,
+  PLAN_RESPONSE,
+} from '@/models/plans';
 
 export const useGetPlans = (
   optionFilter: OPTION_FILTER_TYPE,
@@ -10,9 +14,12 @@ export const useGetPlans = (
     queryKey: ['getting_plans'],
   });
 
-export const useGetImagesEventOfAllPlans = (): UseQueryResult<string[], any> =>
+export const useGetImagesEventOfAllPlans = (): UseQueryResult<
+  IMAGES_EVENTS_PLANS[],
+  any
+> =>
   useQuery({
     queryFn: () => getPlansService('allplans'),
     queryKey: ['getting_images_allPlans'],
-    select: data => data.map(item => item.imageUrl),
+    select: data => data.map(item => ({image: item.imageUrl})),
   });
