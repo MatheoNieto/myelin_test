@@ -28,7 +28,8 @@ import {
 } from '@shopify/restyle';
 import {useAppRestyle} from '@/theme';
 
-import {useAsProp, useFontStyle} from '@/ui/hooks';
+import {useFonts as useFontStyle} from 'expo-font';
+import {useAsProp} from '@/ui/hooks';
 import {forwardRef, getKeys} from '@/ui/utils';
 
 import type {

@@ -5,23 +5,14 @@ const textVariants = {
   defaults: {
     color: 'textPrimary',
     fontFamily: AppFonts.Poppins,
-    letterSpacing: 0.049, // 0.049 (fontSize 14) = 0.0035em
+    letterSpacing: 0.049,
     fontSize: isTablet ? 17 : 14,
-  },
-  headerRegular: {
-    fontWeight: '300',
-    fontSize: isTablet ? 35 : 32,
-    lineHeight: 40,
   },
   headerBold: {
     fontWeight: 'bold',
-    fontSize: isTablet ? 35 : 32,
+    fontSize: 32,
     lineHeight: 40,
-  },
-  headerExtraBold: {
-    fontWeight: '800',
-    fontSize: isTablet ? 35 : 32,
-    lineHeight: 40,
+    color: 'primaryText',
   },
   subheadLargeLight: {
     fontWeight: '300',
@@ -85,6 +76,7 @@ const textVariants = {
   bodyBold: {
     fontWeight: '600',
     fontSize: isTablet ? 17 : 14,
+    color: 'primaryText',
     lineHeight: 18,
   },
   bodyMediumLink: {

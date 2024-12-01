@@ -32,7 +32,7 @@ const lightTheme = {
     skeletonBackground: palette.base100,
     skeletonHighlight: palette.polar,
     successMessage: palette.success600,
-    textPrimary: palette.base900,
+    textPrimary: palette.base800,
     textSecondary: palette.base400,
     transparent: palette.transparent,
     // future figma colors

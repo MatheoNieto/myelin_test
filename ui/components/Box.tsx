@@ -37,13 +37,12 @@ type Props = RestyleBoxProps & {
 };
 const restyleFunctions = composeRestyleFunctions(boxRestyleFunctions);
 
-const Box = forwardRef<Props, typeof View>(
-  ({as, _dark, _light, ...rest}, ref) => {
-    const BoxComponent = useAsProp(View, as);
-    const props = useAppRestyle(restyleFunctions, {...rest, ..._light});
-    //@ts-ignore
-    return <BoxComponent ref={ref} {...props} />;
-  },
-);
+const Box = forwardRef<Props, typeof View>(({as, _light, ...rest}, ref) => {
+  const BoxComponent = useAsProp(View, as);
+  const props = useAppRestyle(restyleFunctions, {...rest, ..._light});
+
+  //@ts-ignore
+  return <BoxComponent ref={ref} {...props} />;
+});
 export type BoxProps = React.ComponentProps<typeof Box>;
 export default Box;

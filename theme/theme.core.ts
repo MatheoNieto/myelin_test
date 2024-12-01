@@ -36,6 +36,7 @@ const theme = createTheme({
     charlotte: palette.charlotte,
     error500: palette.error500,
     grayIcon: palette.grayIcon,
+    primaryText: palette.primaryText,
   },
   spacing: {
     unset: 0,

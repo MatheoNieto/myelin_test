@@ -27,7 +27,7 @@ import {
 } from '@shopify/restyle';
 import {Theme, useAppRestyle} from '@/theme';
 
-import {useFontStyle} from '@/ui/hooks';
+import {useFonts as useFontStyle} from 'expo-font';
 import {forwardRef, getKeys} from '@/ui/utils';
 
 import BaseButton, {BaseButtonProps} from './BaseButton';
@@ -111,7 +111,7 @@ const Button = forwardRef<ButtonProps, typeof Pressable>(
       ...rest,
       ..._light,
     });
-    const fontStyle = useFontStyle(props.style[0] as TextStyle);
+    const fontStyle = useFontStyle(props.style[0]);
     const containerStyle = props.style[0];
     const nextContainerStyle: typeof containerStyle = {};
 

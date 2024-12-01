@@ -1,4 +1,4 @@
-import {DarkTheme, DefaultTheme, ThemeProvider} from '@react-navigation/native';
+import {DarkTheme, DefaultTheme} from '@react-navigation/native';
 
 import {useFonts} from 'expo-font';
 import {Stack} from 'expo-router';
@@ -9,6 +9,7 @@ import {QueryClientProvider} from '@tanstack/react-query';
 
 import {useColorScheme} from '@/hooks/useColorScheme';
 import {queryClient} from '@/constants/queryClient';
+import ThemeProvider from '@/theme/ThemeProvider';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -36,7 +37,7 @@ export default function RootLayout() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+      <ThemeProvider>
         <Stack
           initialRouteName="index"
           screenOptions={{

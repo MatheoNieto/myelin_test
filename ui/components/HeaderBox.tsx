@@ -6,7 +6,6 @@ import {
 } from 'react-native-safe-area-context';
 import Box, {BoxProps} from '@/ui/components/Box';
 import Text from '@/ui/components/Text';
-import {isTablet} from '@/helpers/platform';
 
 export type ScreenHeaderBoxProps = BoxProps & {
   leftIcon?: React.ReactElement;
@@ -14,7 +13,7 @@ export type ScreenHeaderBoxProps = BoxProps & {
   title?: string;
   maxLength?: number;
 };
-const marginTopIos = isTablet ? 20 : -20;
+const marginTopIos = -20;
 
 const HeaderBox = ({
   leftIcon,
