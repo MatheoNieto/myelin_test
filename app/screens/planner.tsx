@@ -1,10 +1,25 @@
+import {PlansList} from '@/containers';
+import ExpiresEvents from '@/containers/ExpiresEvents';
+import TimeLinePlans from '@/containers/TimeLinePlans';
+import {formatDate, getGreeting} from '@/helpers';
+import {Box, HeaderBox, ScrollBox, Text} from '@/ui/components';
 import React from 'react';
-import { Text, View } from 'react-native';
 
 export default function Planner() {
+  const getDateToday = formatDate(new Date(), 'dddd, DD MMM');
+  const greeting = getGreeting();
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Edit this screen</Text>
-    </View>
+    <ScrollBox>
+      <Box flex={1} backgroundColor="white">
+        <HeaderBox title="Planner" />
+        <Box px="m" backgroundColor="white">
+          <Text fontWeight="600">{getDateToday}</Text>
+          <Text variant="headerBold">{greeting}</Text>
+        </Box>
+        <PlansList />
+        <ExpiresEvents />
+        <TimeLinePlans />
+      </Box>
+    </ScrollBox>
   );
 }
